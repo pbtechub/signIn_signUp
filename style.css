@@ -1,0 +1,34 @@
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.w-50 {
+    height: ;
+}
+
+.mt-8 {
+    margin-top: 80px;
+}
+
+.alert {
+    padding: 0 3px;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    
+}
+
+.sign_up-form, .login-form, .reset-form {
+    transition: tranform 0.4s ease-in;
+}
+
+.center {
+    max-width: 800px;
+}
+

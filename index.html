@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Login Page</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header>
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-1 fixed-top">
+    <div class="container">
+      <a href="#" class="navbar-brand"><img src="./img/formula-1-logo-pictures-9.png" alt="" width="100px" height="60px"></a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navmenu"
+        
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item  p-3">
+            <a href="#" class="nav-link">Join a Race</a>
+          </li>
+          <li class="nav-item p-3">
+            <a href="#" class="nav-link">Leaderboard</a>
+          </li>
+          <li class="nav-item p-3">
+            <button 
+            class="btn btn-light text-dark fw-bold" id="login-btn" type="button">Login</button>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </header>
+  <main class="mt-8">
+    <div class="container mt-4 d-flex justify-content-center" >
+        <div class="center py-5 h-auto min-vh-100 w-100 w-md-50 w-lg-25 px-3">
+
+          <!-- Front page -->
+
+              <div class="start ">
+                <h3 class="text-center">Start your journey, we will come up with better solution.</h3>
+                <p class="mt-3 text-center">Lorem ipsum dolor sit amet consectetur, elit. Quod possimus laboriosam quaerat, 
+                  ducimus excepturi.<span class=" d-none d-lg-block">  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod possimus laboriosam quaerat, 
+                  ducimus excepturi.</span> </p>
+                  <div class="text-center d-md-flex justify-content-between">
+                    <button class="btn btn-dark btn-block m-3 w-50" id="login-reg">Sign In</button>
+                    <button class="btn btn-dark btn-block m-3 w-50" id="sign-up-btn">Sign Up</button>
+                  </div>
+                
+                    
+              </div>
+
+
+         <!-- Registration -->
+
+              <div class="sign-up d-none">
+                <h4 class="text-center">
+                    SignUp</h4>
+                    <form id="sign_up-form">
+                      <div class="form-group">
+                        <label for="title">Enter your First Name:</label>
+                        <input type="text" value="" class="form-control mt-2" id="first-name">
+                      </div>
+                      <div class="form-group mt-3 first-name-err">
+                        <label for="title">Enter your Last Name:</label>
+                        <input type="text" value="" class="form-control mt-2" id="last-name">
+                      </div>
+                      <div class="form-group mt-3 last-name-err">
+                        <label for="title">Enter your Email:</label>
+                        <input type="email" value="" class="form-control mt-2" id="signup-email">
+                      </div>
+                      <div class="form-group mt-3 email-err">
+                        <label for="title">Enter your Mobile number:</label>
+                        <input type="number" value="" class="form-control mt-2" id="mobile-number">
+                      </div>
+                      <input type="submit" value="Register" class="btn btn-dark btn-block mt-3 w-100 mobile-err" id="register">
+                    </form>
+              </div>
+
+          <!-- Registration confirmation -->
+
+          <div class="mt-4 d-none reg-conf">
+            <h4 class="text-center mb-4">
+                You have successfully Registered</h4>
+                <form id="">
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod possimus laboriosam quaerat, 
+                    ducimus excepturi. </p>
+                    <button class="btn btn-dark btn-block mt-3 w-100 " id="login-reg">Login</button>
+                </form>
+          </div>
+
+            <!-- Login Page -->
+
+          <div class="login d-none">
+            <h4 class="text-center">
+                Login</h4>
+                <form id="login-form">
+                  <div class="form-group">
+                    <label for="title">Enter your Email</label>
+                    <input type="email" value="" class="form-control mt-2" id="email">
+                  </div>
+                  <div class="form-group mt-4 form-group-1">
+                    <label for="title">Enter your Passsword</label>
+                    <input type="password" value="" class="form-control mt-2" id="password">
+                  </div>
+                  <div class="forget-password mt-1 text-end">
+                    <a href="#" class="text-dark fs-6"><small>Forget password ?</small> </a>
+                  </div>
+                  
+                  <input type="submit" value="Login" class="btn btn-dark btn-block mt-4 w-100" id="login-btn">
+                </form>
+          </div>
+
+
+          <!-- Login confirmation -->
+
+            <div class="mt-4 d-none login-conf">
+              <h4 class="text-center mb-4">
+                  You have successfully Loged in.</h4>
+                  <form id="">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod possimus laboriosam quaerat, 
+                      ducimus excepturi. </p>
+                    <input type="submit" value="Get started" class="btn btn-dark btn-block mt-4 w-100">
+                  </form>
+            </div>
+
+          <!-- Password reset page -->
+
+            <div class="password-reset d-none">
+                <h4 class="text-center">
+                    Password Reset</h4>
+                    <form id="reset-form">
+                      <div class="form-group">
+                        <label for="title">New Passsword</label>
+                        <input type="password" value="" class="form-control mt-2" id="new-password">
+                      </div>
+                      <div class="form-group mt-4 form-group-2">
+                        <label for="title">Re-enter New Passsword</label>
+                        <input type="password" value="" class="form-control mt-2" id="re-new-password">
+                      </div>
+                      
+                      <input type="submit" value="Reset Password" class="btn btn-dark btn-block mt-4 w-100" id="reset-btn">
+                    </form>
+            </div>
+
+            <!-- Password reset confirmation Page -->
+
+            <div class="mt-5 d-none reset-conf">
+                <h4 class="text-center mb-4">
+                    Password Changed</h4>
+                    <form id="">
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod possimus laboriosam quaerat, 
+                        ducimus excepturi. </p>
+                      <input type="submit" value="Join a Race" class="btn btn-dark btn-block mt-4 w-100">
+                    </form>
+            </div>
+        </div>
+      </div>
+  </main>
+
+  <!-- Footer -->
+
+  <footer>
+    <footer class="footer py-2 bg-dark text-white text-center  w-100">
+        <div class="container">
+            <!-- <div class="" id="">
+                <ul class="d-md-flex ms-auto">
+                  <li class=" p-3">
+                    <a href="#" class="nav-link">About Us</a>
+                  </li>
+                  <li class="p-3">
+                    <a href="#" class="nav-link">Privacy Policy</a>
+                  </li>
+                  <li class="p-3">
+                    <a href="#" class="nav-link">Tutorials</a>
+                  </li>
+                  <li class="p-3">
+                    <a href="#" class="nav-link">Terms of service</a>
+                  </li>
+                </ul>
+              </div> -->
+              <p>Copyright &copy; <span id="date"></span></p>
+        </div>
+      </footer>
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script src="main.js"></script>
+</body>
+
+</html>
